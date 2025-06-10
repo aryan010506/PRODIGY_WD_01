@@ -22,4 +22,4 @@ Google Fonts
 Font Awesome Icons
 
 📸 Preview
-
+[DOCTYPE html.pdf](https://github.com/user-attachments/files/20673876/DOCTYPE.html.pdf)
