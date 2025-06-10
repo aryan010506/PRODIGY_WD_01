@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prodigy InfoTech</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<style>
+* {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+scroll-behavior: smooth;
+}
+
+body {
+background: white;
+color: black;
+}
+
+header {
+background: white;
+padding: 18px 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 2px solid black;
+}
+
+header h1 {
+font-size: 28px;
+color: black;
+}
+
+nav a {
+margin: 0 12px;
+color: black;
+text-decoration: none;
+font-weight: 600;
+transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+color: gray;
+}
+
+.hero {
+padding: 80px 20px;
+background: white;
+text-align: center;
+}
+
+.hero h2 {
+font-size: 40px;
+color: black;
+margin-bottom: 16px;
+}
+
+.hero p {
+font-size: 18px;
+max-width: 700px;
+margin: 0 auto 30px;
+line-height: 1.5;
+}
+
+.btn {
+background-color: black;
+border: none;
+padding: 12px 24px;
+border-radius: 25px;
+font-weight: bold;
+cursor: pointer;
+color: white;
+transition: background 0.3s;
+}
+
+.btn:hover {
+background-color: #333;
+}
+
+section {
+padding: 60px 20px;
+}
+
+.features, .video-lessons, .dashboard {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 30px;
+}
+
+.feature-card, .video-card {
+background: #f9f9f9;
+border: 1px solid black;
+padding: 25px;
+border-radius: 10px;
+width: 300px;
+text-align: center;
+transition: transform 0.3s ease;
+}
+
+.feature-card:hover, .video-card:hover {
+transform: translateY(-6px);
+}
+
+.feature-card i {
+font-size: 36px;
+color: black;
+margin-bottom: 12px;
+}
+
+.feature-card h3, .video-card h3 {
+margin-bottom: 10px;
+color: black;
+}
+
+.feature-card p, .video-card p {
+font-size: 14px;
+color: #444;
+}
+
+#auth {
+background: white;
+text-align: center;
+}
+
+.auth-container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 40px;
+}
+
+.auth-box {
+background: #f9f9f9;
+padding: 25px;
+border: 1px solid black;
+border-radius: 10px;
+width: 300px;
+}
+
+.auth-box input {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+background: #eaeaea;
+border: none;
+border-radius: 5px;
+color: black;
+}
+
+footer {
+background: white;
+color: #444;
+text-align: center;
+padding: 25px;
+border-top: 1px solid black;
+}
+
+.quiz-box {
+max-width: 600px;
+margin: 0 auto;
+background: #f9f9f9;
+padding: 30px;
+border-radius: 12px;
+border: 1px solid black;
+}
+
+.quiz-box p {
+font-size: 18px;
+margin-bottom: 20px;
+}
+
+.quiz-box label {
+display: block;
+margin-bottom: 15px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Prodigy InfoTech Learn</h1>
+<nav>
+<a href="#hero">Home</a>
+<a href="#features">Courses</a>
+<a href="#videos">Videos</a>
+<a href="#quiz">Quiz</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#auth">Login</a>
+</nav>
+</header>
+
+<section class="hero" id="hero">
+<h2>Level Up with Prodigy InfoTech</h2>
+<p>Start learning the skills you need with our curated video lessons, quizzes, and personalized dashboard.</p>
+<button class="btn" onclick="welcomeMessage()">Get Started</button>
+</section>
+
+<section class="features" id="features">
+<div class="feature-card">
+<i class="fas fa-video"></i>
+<h3>Video Lessons</h3>
+<p>Explore expert-led videos tailored for hands-on learning.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-question-circle"></i>
+<h3>Interactive Quizzes</h3>
+<p>Test your skills and reinforce learning with every module.</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-chart-line"></i>
+<h3>Progress Tracking</h3>
+<p>Visualize how far you've come and what's next!</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-certificate"></i>
+<h3>Certifications</h3>
+<p>Earn verified certificates after course completion.</p>
+</div>
+</section>
+
+<section class="video-lessons" id="videos">
+<h2 style="color: black; width: 100%; text-align: center;">Watch & Learn</h2>
+<div class="video-card">
+<h3>HTML Basics</h3>
+<iframe width="100%" height="180" src="https://www.youtube.com/embed/qz0aGYrrlhU" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="video-card">
+<h3>CSS for Beginners</h3>
+<iframe width="100%" height="180" src="https://www.youtube.com/embed/1Rs2ND1ryYc" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="video-card">
+<h3>JavaScript Intro</h3>
+<iframe width="100%" height="180" src="https://www.youtube.com/embed/hdI2bqOjy3c" frameborder="0" allowfullscreen></iframe>
+</div>
+</section>
+
+<section class="quiz-section" id="quiz">
+<h2 style="color: black; text-align: center;">Try a Quick Quiz</h2>
+<div class="quiz-box">
+<p>What does HTML stand for?</p>
+<label><input type="radio" name="quiz" value="a"> Hyper Text Makeup Language</label>
+<label><input type="radio" name="quiz" value="b"> HighText Machine Language</label>
+<label><input type="radio" name="quiz" value="c"> HyperText Markup Language</label>
+<label><input type="radio" name="quiz" value="d"> None of the above</label>
+<button class="btn" onclick="verifyQuiz()">Submit</button>
+</div>
+</section>
+
+<section class="dashboard" id="dashboard">
+<h2 style="color: black;">Your Dashboard</h2>
+<div class="feature-card">
+<i class="fas fa-play-circle"></i>
+<h3>Courses Enrolled</h3>
+<p>You're learning Web Dev, Python, and Data Science</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-tasks"></i>
+<h3>Progress</h3>
+<p>Overall 75% course completion</p>
+</div>
+<div class="feature-card">
+<i class="fas fa-award"></i>
+<h3>Achievements</h3>
+<p>2 certificates completed successfully</p>
+</div>
+</section>
+
+<section id="auth">
+<h2 style="color: black;">Login / Register</h2>
+<div class="auth-container">
+<div class="auth-box">
+<h3>Login</h3>
+<input type="text" placeholder="Username" />
+<input type="password" placeholder="Password" />
+<button class="btn" onclick="Swal.fire('Welcome back!', '', 'success')">Login</button>
+</div>
+<div class="auth-box">
+<h3>Sign Up</h3>
+<input type="text" placeholder="Full Name" />
+<input type="email" placeholder="Email Address" />
+<input type="password" placeholder="Create Password" />
+<button class="btn" onclick="Swal.fire('Account Created!', '', 'success')">Sign Up</button>
+</div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 Prodigy InfoTech | Certification available after course completion</p>
+</footer>
+
+<script>
+function welcomeMessage() {
+Swal.fire({
+title: 'Welcome!',
+text: 'Excited to have you on Prodigy InfoTech!',
+icon: 'success',
+confirmButtonColor: 'black'
+});
+}
+
+function verifyQuiz() {
+const options = document.getElementsByName('quiz');
+let answer = null;
+
+for (let opt of options) {
+if (opt.checked) {
+answer = opt.value;
+break;
+}
+}
+
+if (!answer) {
+Swal.fire('Please select an answer first!', '', 'warning');
+return;
+}
+
+if (answer === 'c') {
+Swal.fire('Correct!', 'Yes! HTML stands for HyperText Markup Language.', 'success');
+} else {
+Swal.fire('Oops!', 'Not quite. Remember, HTML is all about *markup*!', 'error');
+}
+}
+</script>
+
+</body>
+</html>
+
