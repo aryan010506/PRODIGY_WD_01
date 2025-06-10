@@ -22,6 +22,4 @@ Google Fonts
 Font Awesome Icons
 
 📸 Preview
-![Image](https://github.com/user-attachments/assets/4f3b2a12-a711-4031-bc3f-d735469d2061)
-![Image](https://github.com/user-attachments/assets/6c5cf4ea-422e-4faa-bfe9-e786a7b5399c)
-![Image](https://github.com/user-attachments/assets/3af11c90-d099-423c-bf69-ea61c0631114)
+
